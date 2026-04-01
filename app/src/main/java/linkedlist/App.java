@@ -7,7 +7,13 @@ public class App {
     public static void main(String[] args) {
 
        JunaLinkedList list = new JunaLinkedList();
-       list.tambahDepan(30);
+       list.tambahDepan(10);
+       list.cetakList();
+
+       list.tambahBelakang(111);
+       list.cetakList();
+
+       list.tambahBelakang(222);
        list.cetakList();
     }
 }
