@@ -8,5 +8,6 @@ public class App {
 
        JunaLinkedList list = new JunaLinkedList();
        list.tambahDepan(30);
+       list.cetakList();
     }
 }
