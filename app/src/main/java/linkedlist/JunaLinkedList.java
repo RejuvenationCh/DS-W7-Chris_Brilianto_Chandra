@@ -41,7 +41,16 @@ public class JunaLinkedList {
     }
 
     public boolean cari(int data){
-        
+        JunaNode current = head;
+
+        while (current != null){
+            if (current.data == data){
+                return true;
+            }
+            current = current.next;
+        }
+
+
         return false;
 
 

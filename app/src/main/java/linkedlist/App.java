@@ -15,5 +15,17 @@ public class App {
 
        list.tambahBelakang(222);
        list.cetakList();
+
+       list.tambahBelakang(3);
+       list.cetakList();
+
+       list.tambahBelakang(4);
+       list.cetakList();
+       
+       list.tambahBelakang(5);
+       list.cetakList();
+
+       System.out.println("Angka 3 ada di dalam : " + list.cari(3));
+
     }
 }
