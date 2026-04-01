@@ -1,9 +1,10 @@
 package linkedlist;
 
-public class Juna {
+public class JunaNode {
     int data;
-    Juna next;
-    public Juna(int data){
+    JunaNode next;
+    
+    public JunaNode(int data){
         this.data = data;
         this.next = null;
     }
