@@ -49,10 +49,27 @@ public class JunaLinkedList {
             }
             current = current.next;
         }
-
-
         return false;
+    }
 
+    public void delete(int key){
+        if (head.data == key){
+            head = null;
+            return;
+        }
+
+        JunaNode current = head;
+
+        while (current.next.data != key) {
+            System.out.println("angka " +key + " belum ketemu");
+            current =  current.next;
+        }
+        if (current.next == null){
+            System.out.println("data tidak ditemukan");
+        } else {
+            System.out.println("Data di temukan. menghapus data");
+            current.next = current.next.next;
+        }
 
     }
     
